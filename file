@@ -1,0 +1,148 @@
+# 📄 Legal Brief AI - Legal Document Summarizer
+
+An AI-powered web application that simplifies complex legal documents into clear, easy-to-understand summaries using advanced Natural Language Processing.
+
+🔗 **Live Demo:** [https://lex-brief-ai--tahazafar592.replit.app/](https://lex-brief-ai--tahazafar592.replit.app/)
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Made with Python](https://img.shields.io/badge/python-3.9+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+---
+
+## 📌 Overview
+
+Legal Brief AI helps users understand lengthy legal documents (contracts, agreements, briefs) by breaking them down into simple, digestible summaries. Instead of reading pages of complex legal jargon, users get key points instantly.
+
+---
+
+## ✨ Features
+
+- 📤 Upload legal documents (PDF/TXT format)
+- 🤖 AI-powered text summarization
+- ⚡ Fast processing and instant results
+- 📋 Extracts key clauses, terms, and obligations
+- 🎨 Clean and simple user interface
+- 🌐 Fully web-based — no installation needed
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|-----------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python (Flask) |
+| AI/NLP | OpenAI API / Transformers |
+| Deployment | Replit |
+| Document Processing | PyPDF2 / pdfplumber |
+
+---
+
+## 📂 Project Structure
+
+```
+legal-brief-ai/
+│
+├── app.py                 # Main application file
+├── requirements.txt       # Python dependencies
+├── templates/
+│   └── index.html         # Frontend HTML page
+├── static/
+│   ├── style.css          # Styling
+│   └── script.js          # Frontend logic
+├── utils/
+│   ├── pdf_extractor.py   # Extracts text from PDF
+│   └── summarizer.py      # AI summarization logic
+└── README.md              # Project documentation
+```
+
+---
+
+## ⚙️ How It Works
+
+1. **Document Upload**  
+   User uploads a legal document (PDF/TXT) through the web interface.
+
+2. **Text Extraction**  
+   The backend extracts raw text from the uploaded file using libraries like `PyPDF2` or `pdfplumber`.
+
+3. **AI Processing**  
+   The extracted text is sent to an AI model (LLM) which analyzes and summarizes the content, identifying:
+   - Key parties involved
+   - Important clauses & terms
+   - Rights & obligations
+   - Critical dates
+
+4. **Summary Output**  
+   The simplified summary is displayed on the web page in an easy-to-read format.
+
+---
+
+## 🚀 Installation & Setup (For Developers)
+
+```bash
+# Clone the repository
+git clone https://github.com/tahazafar592/legal-brief-ai.git
+
+# Navigate to project folder
+cd legal-brief-ai
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python app.py
+```
+
+Open your browser and go to `http://localhost:5000`
+
+---
+
+## 📋 Requirements
+
+```
+flask
+openai
+PyPDF2
+python-dotenv
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+---
+
+## 🎯 Use Cases
+
+- **Contract Review** — Understand agreements before signing
+- **Legal Research** — Speed up case analysis
+- **Business Due Diligence** — Quick document review
+- **Education** — Help law students grasp complex texts
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit pull requests.
+
+---
+
+## 📧 Contact
+
+**Developer:** Taha Zafar  
+🔗 [Live Project](https://lex-brief-ai--tahazafar592.replit.app/)  
+📧 your-email@example.com
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
